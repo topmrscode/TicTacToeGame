@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Tic Tac Toe game</title>
+
+	<!-- ##### - CSS -->	
+	<!-- PERSONNEL -->
+	<link rel="stylesheet" href="style.css">	
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div> <img id= "img" src="./assets/logo.png"/></div>
+    <h2>It's your turn ! </h2>
+    <div id="ex1" class="modal">
+		<p>HOW TO PLAY: </br> </br>The object of Tic Tac Toe is to get three in a row. You play on a three by three game board. The first player is known as X and the second is O. Players alternate placing Xs and Os on the game board until either oppent has three in a row or all nine squares are filled. X always goes first, and in the event that no one has three in a row, the stalemate is called a cat game.<br />
+			</p>
+	</div>
+	<div id="ex2" class="modal win_modal">
+        <img src="./assets/win.png" style="width:inherit"/>
+        <p>We have a winner, Congratulations, the looser have to make a pledge &#128540 ! </p>
+    </div>
+    <div class="info_div_rules">
+        <a class="info_div_rules" href="#ex1" rel="modal:open" style="float:left">How to play ?</a
+    ></div>
+    <div class="flex-container flex-column">
+        <div class="flex-container flex-wrap" id="board">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <button id="replay_button">Replay</button>
+    </div>
+
+    <div class="footer">
+        <p>Created and designed by Laura Baudean</p>
+      </div>
+</body>
+<!-- ##### - JAVASCRIPT -->
+	<!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />	
+    
+  	<!-- PERSONNEL -->
+      <script src="script.js"></script>
+</html>
+
